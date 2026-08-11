@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div class="project-card-actions">
                 <button type="button" class="project-preview-btn" data-project-id="${project.id}">View details</button>
-                <a href="${project.link}" target="_blank" rel="noreferrer">Live demo</a>
+                <a href="${project.link}" target="_blank" rel="noopener noreferrer" view="inline">Live demo</a>
               </div>
             </div>
           </article>
