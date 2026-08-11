@@ -17,14 +17,26 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header id="home" role="banner">
       <div class="nav">
-        <div class="brand">Carlos Wason</div>
-        <h1>Developer Portafolio</h1>
+        <div class="brand-wrap">
+          <div class="brand">Carlos Wason</div>
+          <h1>Developer Portafolio</h1>
+        </div>
+
+        <div class="header-profile" aria-label="Profile photo">
+          <img
+            src="ConsoleApp1/images/DAW02282-Enhanced-NR.png"
+            alt="Portrait of Carlos Wason"
+            width="120"
+            height="120"
+          />
+        </div>
+
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav aria-label="Main navigation" role="navigation">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -47,50 +59,27 @@
           <button class="filter-btn" data-category="productivity" type="button">Productivity</button>
           <button class="filter-btn" data-category="portfolio" type="button">Portfolio</button>
         </div>
-        <div class="projects-grid">
-          <article class="project-card" data-category="web">
-            <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
-              alt="Laptop and desk setup showing a modern responsive website design for Project One."
-              width="400"
-              height="250"
-              loading="lazy"
-            />
-            <div class="project-card-content">
-              <h3>Project One</h3>
-              <p>A responsive website concept focused on clear content structure and modern user experience.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="productivity">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
-              alt="Collaborative team planning session with task cards and productivity planning for Project Two."
-              width="400"
-              height="250"
-              loading="lazy"
-            />
-            <div class="project-card-content">
-              <h3>Project Two</h3>
-              <p>A task management application prototype built to organize daily priorities and improve productivity.</p>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="portfolio">
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
-              alt="Portfolio website mockup displayed on a computer screen for Project Three."
-              width="400"
-              height="250"
-              loading="lazy"
-            />
-            <div class="project-card-content">
-              <h3>Project Three</h3>
-              <p>A portfolio landing page designed to highlight skills, projects, and contact information in a polished way.</p>
-            </div>
-          </article>
-        </div>
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
       </section>
+
+      <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <div class="project-modal__content">
+          <button class="project-modal__close" type="button" aria-label="Close project details">×</button>
+          <div class="project-modal__media">
+            <img id="project-modal-image" src="" alt="" />
+          </div>
+          <div class="project-modal__details">
+            <p class="project-modal__eyebrow" id="project-modal-category"></p>
+            <h3 id="project-modal-title"></h3>
+            <p id="project-modal-description"></p>
+            <ul id="project-modal-tech" class="project-modal__tech"></ul>
+            <div class="project-modal__actions">
+              <a id="project-modal-link" href="#" target="_blank" rel="noreferrer">View project</a>
+              <button class="secondary-btn project-modal__dismiss" type="button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="lightbox" id="lightbox" aria-hidden="true">
         <button class="lightbox-close" type="button" aria-label="Close preview">×</button>
