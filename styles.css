@@ -649,6 +649,7 @@ button:focus-visible {
   }
 
   nav ul {
+    display: flex;
     gap: 0.9rem;
     flex-wrap: wrap;
     justify-content: center;
@@ -747,41 +748,3 @@ video {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .nav {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
-  }
-
-  nav ul.is-open {
-    display: flex;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  .projects-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  form {
-    max-width: 100%;
-  }
-}
