@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#172554"/>
+  <rect x="140" y="120" width="620" height="360" rx="24" fill="#1e3a8a" stroke="#22c55e" stroke-width="4"/>
+  <rect x="180" y="180" width="220" height="220" rx="20" fill="#f8fafc"/>
+  <rect x="430" y="180" width="260" height="40" rx="20" fill="#22c55e"/>
+  <rect x="430" y="240" width="210" height="18" rx="9" fill="#bfdbfe"/>
+  <rect x="430" y="280" width="180" height="18" rx="9" fill="#bfdbfe"/>
+  <rect x="430" y="320" width="150" height="18" rx="9" fill="#bfdbfe"/>
+  <circle cx="290" cy="290" r="70" fill="#22c55e" opacity="0.9"/>
+  <text x="450" y="535" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#f8fafc">Productivity App</text>
+</svg>

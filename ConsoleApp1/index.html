@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website featuring web development projects, technical skills, and a contact form for collaboration and inquiries." />
+    <meta name="keywords" content="portfolio, web development, front-end developer, projects, skills, contact" />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Your Name | Portfolio" />
+    <meta property="og:description" content="Personal portfolio website featuring web development projects, technical skills, and a contact form for collaboration and inquiries." />
+    <meta property="og:type" content="website" />
+    <title>Your Name | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="home" role="banner">
+      <div class="nav">
+        <div class="brand">Carlos Wason</div>
+        <h1>Developer Portafolio</h1>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav aria-label="Main navigation" role="navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+      <section id="about-me" aria-labelledby="about-me-heading" role="region">
+        <h2 id="about-me-heading">About Me</h2>
+        <p>Hello! I am a web developer focused on creating meaningful digital experiences, problem-solving, and building user-friendly interfaces.</p>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading" role="region">
+        <h2 id="projects-heading">Projects</h2>
+        <p>Explore recent work in responsive web design, productivity tools, and portfolio experiences.</p>
+        <div class="project-filters" role="group" aria-label="Project filters">
+          <button class="filter-btn active" data-category="all" type="button">All</button>
+          <button class="filter-btn" data-category="web" type="button">Web</button>
+          <button class="filter-btn" data-category="productivity" type="button">Productivity</button>
+          <button class="filter-btn" data-category="portfolio" type="button">Portfolio</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-category="web">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+              alt="Laptop and desk setup showing a modern responsive website design for Project One."
+              width="400"
+              height="250"
+              loading="lazy"
+            />
+            <div class="project-card-content">
+              <h3>Project One</h3>
+              <p>A responsive website concept focused on clear content structure and modern user experience.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="productivity">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+              alt="Collaborative team planning session with task cards and productivity planning for Project Two."
+              width="400"
+              height="250"
+              loading="lazy"
+            />
+            <div class="project-card-content">
+              <h3>Project Two</h3>
+              <p>A task management application prototype built to organize daily priorities and improve productivity.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="portfolio">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Portfolio website mockup displayed on a computer screen for Project Three."
+              width="400"
+              height="250"
+              loading="lazy"
+            />
+            <div class="project-card-content">
+              <h3>Project Three</h3>
+              <p>A portfolio landing page designed to highlight skills, projects, and contact information in a polished way.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Close preview">×</button>
+        <img src="" alt="" class="lightbox-image" />
+      </div>
+
+      <section aria-labelledby="skills-heading" role="region">
+        <h2 id="skills-heading">Skills</h2>
+        <p>Core strengths include front-end development, responsive design, JavaScript, and user-focused problem solving.</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+          <li>CCNA</li>
+          <li>Responsive Design</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading" role="region">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Reach out for collaborations, freelance work, or project inquiries.</p>
+        <form id="contact-form" action="#" method="post" aria-labelledby="contact-heading" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true" />
+            <p class="form-message" id="name-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true" />
+            <p class="form-message" id="email-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required aria-required="true"></textarea>
+            <p class="form-message" id="message-message" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" aria-label="Send your message">Send Message</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2026 Your Name</p>
+    </footer>
+  </body>
+</html>
+
