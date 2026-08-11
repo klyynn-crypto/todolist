@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailMessage = document.getElementById('email-message');
   const messageMessage = document.getElementById('message-message');
 
+  document.querySelectorAll('a[view="inline"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.open(link.href, '_blank', 'noopener,noreferrer');
+    });
+  });
+
   const projects = [
     {
       id: 'taskflow-pro',
