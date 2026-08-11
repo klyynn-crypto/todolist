@@ -240,18 +240,6 @@ h2 + p {
   font-weight: 600;
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  flex-wrap: wrap;
-}
-
-.skills-list a span {
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #8f6d1f;
-  font-weight: 700;
 }
 
 .skills-list a:hover,
